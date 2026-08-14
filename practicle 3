@@ -28,3 +28,11 @@ PRIMARY KEY (roll_no, course_id,semester),
 FOREIGN KEY(roll_no) REFERENCES student(roll_no),
 FOREIGN KEY(course_id) REFERENCES course(course_id)
 );
+INSERT INTO department VALUES(1, 'Computer Science'),(2, 'Electronics');
+INSERT INTO student VALUES (101, 'Nilisha' , 'nilisha@mail.com','123456780012',1);
+INSERT INTO student VALUES(102, 'Rahul','rahul@mail.com', '987654321098',2);
+
+INSERT INTO course VALUES (501,'DBMS',1),(502,'Circuits',2);
+INSERT INTO enrollment VALUES (101 ,501,3,'A');
+INSERT INTO enrollment VALUES(101,502,4,'B'); -- same student,different course:
+
